@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.code-editor-container{
+    height: 70%;
+    width: 100%;
+    /* background-color:rgb(12, 17,20); */
+    background-image: url(orignal.jpeg);
+    background-size: contain;
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+    padding: 20px;
+    overflow: auto;
+}
+
+.code-editor{
+    border: 1px solid black;
+    height: 270px;
+    width: 280px;
+    background-color: rgb(12, 17, 20);
+    border: 1px solid rgba(245, 245, 245, 0.231);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(245, 245, 245, 0.234);   
+    overflow: auto;
+    position: relative;
+    margin-top: 15px;
+}
+
+.head-editor{
+    height: 15%;
+    width: 100%;    
+    background-color: rgb(12, 17, 20);
+    box-shadow: 2px 4px 20px black;
+    border-radius: 0px 0px 40px 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.left-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+}
+
+.left-head span{
+    color: rgba(255, 255, 255, 0.264);
+    font-size: 20px;
+    
+}
+
+.right-head i{
+    color:rgba(245, 222, 179, 0.294);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 130px;    
+}
+
+.right-head i:hover{
+    scale: 120%;
+}
+
+.right-head i{
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.code-editor textarea{
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: rgb(12, 17, 20);
+    border: none;
+    position: absolute;
+    bottom: 0;
+    color:rgba(128, 128, 128, 0.668);
+    /* color:rgba(247, 65, 247, 0.355); */
+    outline: none;
+    padding: 20px;
+    resize: none;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.output-container{
+    width: 100%;
+    height:30%;        
+    box-shadow: 2px -4px 10px rgba(36,71,72);
+    color: rgba(255, 255, 255, 0.264);
+    font-size: 20px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    transition: all 0.7s;
+    
+}
+
+.output-head{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(12, 17, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    color: white;
+    
+    
+}
+
+.output-head i:hover {
+    scale: 120%;
+}
+
+.output-head i {
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+#output{
+    width: 100%;
+    height: 100%;    
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+.full-output-screen{
+    height: 100%;
+}
+
+#full{
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    
+}
+
+.html-input::selection{
+    background-color: rgba(255, 0, 0, 0.256);
+    color: pink;
+}
+
+.js-input::selection {
+    background-color: rgba(255, 0, 0, 0.255);
+    color: pink;
+}
+
+.run-code{
+    display: flex;
+    gap:10px
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(22, 235, 22, 0.613);
+    padding: 5px;
+    border-radius: 7px;    
+    border: none;
+    color: white;
+    
+}
+
+.button:active{
+    scale: 70%;
+    
+}
+
+.green-dot{
+    height: 10px;
+}
+
+#sav{
+    height: 15px;    
+    /* filter: invert(0.9);
+     */
+}
+
+
+.live-prev{
+    background-color:rgba(0, 0, 0, 0.816);
+    height: 30px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    /* background-color: yellowgreen; */
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.header p{
+    color: gray;
+}
+
+.header span{
+    background: linear-gradient(70deg, #a1ff6b, #cd4e4e);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 5px;
+    color: black;
+    padding: 2px;
+    
+}
+
+.code-png{
+    height: 50px;
+    
+}

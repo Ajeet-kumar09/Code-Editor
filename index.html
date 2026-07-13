@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    
+    <div class="code-editor-container">   
+        <div class="header">
+            <div>
+                <img src="programming.png" class="code-png">
+            </div>
+            <div>
+                <h2>CODE<span>CRAFT</span> EDITOR</h2>
+                <p>Online Code Editor & Previewer</p>
+            </div>
+        </div>
+        <div class="code-editor html-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="html.png" alt="" width="17px" >
+                <span>HTML</span>
+                </div>
+                <div class="right-head">    
+                <i class="copy copy1 fa-regular fa-copy" ></i>                    
+                </div>
+            </div>
+            <textarea class="html-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor css-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="css.png" alt="" width="20px">
+                <span>CSS</span>
+                </div>
+                <div class="right-head">
+                    <i class="copy copy2 fa-regular fa-copy "></i>                    
+                </div>
+            </div>
+            <textarea class="css-input" spellcheck="false"></textarea>
+        </div>
+        <div class="code-editor js-editor">
+            <div class="head-editor">
+                <div class="left-head">
+                    <img src="js.png" alt="" width="20px">
+                <span>JS</span>
+                </div>
+                <div class="right-head">
+                    <i class="copy copy3 fa-regular fa-copy"></i>
+                </div>
+            </div>
+            <textarea class="js-input" spellcheck="false"></textarea>
+        </div>
+    </div>
+
+    <div class="output-container">
+        <div class="output-head">
+            <span >OUTPUT</span>
+            <div class="run-code">
+                <!-- <i id="save" class="fa-regular fa-floppy-disk"><span>Runcode</span></i> -->
+                 <button class="button" id="save"> <img src="play-button.png" id="sav" >  <h4>RUN CODE</h4></button>                 
+                <i id="full" class="fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </div>
+        <div class="live-prev">
+            <h6> <img src="button.png" class="green-dot"> LIVE PREVIEW</h6>
+        </div>
+        <iframe id="output">
+
+        </iframe>
+
+        
+    </div>
+    
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>
